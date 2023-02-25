@@ -1,0 +1,29 @@
+body{
+    background-color: #14277c;
+    height: 500px;
+    width: 500px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#search-form{
+    align-self: center;
+}
+
+#search-input{
+    width: 300px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #2b3ddf77;
+    color: white;
+}
+
+#submitButton{
+    height: 35px;
+}
+
+#submitButton:hover{
+    background-color: gray;
+}
