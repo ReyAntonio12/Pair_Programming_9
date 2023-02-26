@@ -5,14 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04d314336c.js" crossorigin="anonymous"></script>
     <title>Github Users</title>
 </head>
 <body>
-    <form id="search-form">
-        <input type="text" id="search-input" name="search-input" placeholder="Search Github Username">
-        <button type="submit" id="submitButton">Search</button>
+    <div class="container">
+        <form id="search-form">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="search-input" name="search-input" placeholder="Search Github Username...">
+            <button type="submit" id="submitButton" onclick="getUserInfo()">Search</button>
       </form>
+    </div>
+    <div id="user-info">
+        <div class="fondo">
+        <div class="images">
+            <img src="assets/octocat.png" class="images-style" id="images-change"/>
+        </div>
+        <div class="titulo">
+            <h2 id="username-Change">The Octocat</h2>
+            <p id="userID-change">@Octocat</p>
+            <p id="userBio-change">This profile has no bio</p>
+        </div>
+        <div class="fecha"> 
+           <p id="dataLogin-change">Joined: 25 January 2011</p> 
+        </div>
+        <div class="seguidores">
+            <p>Repos</p>
+            <p>Followers</p>
+            <p>Following</p>
+        </div>
+        <div class="info-seguidores">
+            <p id="repos-change">8</p>
+            <p id="followers-change">3938</p>
+            <p id="following-change">9</p>
+        </div>
+        <div class="direccion">
+            <i class="fa-solid fa-location-dot"></i>
+            <p id="location-change"> San Francisco</p>
+            <i class="fa-brands fa-twitter"></i>
+            <p id="twitter-change">  Not Available</p>
+            <i class="fa-solid fa-link"></i>
+            <p id="page-change"> https://github.blog</p>
+            <i class="fa-solid fa-building"></i>
+            <p> @Github</p>
+        </div>
+    </div>
+    </div>
+
     <script src="main.js"></script>
-    <div id="user-info"></div>
 </body>
 </html>
